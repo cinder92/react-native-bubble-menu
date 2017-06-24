@@ -1,0 +1,19 @@
+{
+  "name": "react-native-bubble-menu",
+  "version": "0.1.0",
+  "description": "A Bubble menu effect for your react native application",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cinder92/react-native-bubble-menu"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "react-native",
+    "menu",
+    "bubble"
+  ],
+  "author": "cinder92 - Dante Cervantes",
+  "license": "ISC"
+}
