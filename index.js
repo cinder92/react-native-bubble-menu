@@ -32,16 +32,16 @@ class BubbleMenu extends Component{
 			Animated[show ? "spring" : "timing"](
 				this.state.openMenu,{
 					toValue,
-					delay : show ? 0 : 150,
-					duration : 250,
+					delay : show ? 0 : 195,
+					duration : 225,
 					easing : Easing.inOut(Easing.ease)
 				}
 			),
 			Animated.timing(
 				this.state.opacity,{
 					toValue : show ? 1 : 0,
-					delay : show ? 150 : 0,
-					duration : 150,
+					delay : show ? 195 : 0,
+					duration : 195,
 					easing : Easing.inOut(Easing.ease)
 				}
 			)
