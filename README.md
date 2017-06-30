@@ -24,7 +24,7 @@ render(){
       <BubbleMenu
          items={this._renderItems()}
          openBtn={this._renderOpenBtn()}
-         show={false}
+         show={show}
          style={...}
       />
    )
