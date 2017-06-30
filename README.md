@@ -18,14 +18,55 @@ import BubbleMenu from 'react-native-bubble-menu';
 ...
 
 render(){
+   const {show} = this.state;
+
    return(
       <BubbleMenu
          items={this._renderItems()}
          openBtn={this._renderOpenBtn()}
          show={false}
-		 style={...}
+         style={...}
       />
    )
+}
+
+_renderOpenBtn(){
+   //you can merge it with, react-native-vector-icon too!
+   
+   //no icon
+   return (
+   	<TouchableOpacity>
+		<View>
+		    <Text>Open Me</Text>
+		</View>
+	</TouchableOpacity>
+   );
+   
+   //with icon
+   
+   return (
+   	<TouchableOpacity onPress={() => {
+		this.setState({show:true})
+	}}>
+		<View>
+		    <Icon name={"menu"} size={32} color={"white"} />
+		</View>
+	</TouchableOpacity>
+   );
+}
+
+_renderItems(){
+   let items = ["Btn1","Btn2","Btn3","Btn4","Btn5"];
+   
+   return items.map((item,i) => (
+   	<TouchableOpacity onPress={() => {
+		this.setState({show:false});
+	}}>
+		<View>
+			<Text>{item}</Text>
+		</View>
+	</TouchableOpacity>
+   ));
 }
 ```
 
