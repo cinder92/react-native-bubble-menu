@@ -1,6 +1,6 @@
 # react-native-bubble-menu
 
-A Bubble menu effect for your react native application
+A Bubble menu effect for your react native application, work very well with `react-native-verctor-icons`
 
 # Example
 
