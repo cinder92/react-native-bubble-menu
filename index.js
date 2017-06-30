@@ -16,10 +16,13 @@ class BubbleMenu extends Component{
 
 	constructor(props){
 		super(props);
+		const { show } = props;
+		const openMenuValue = show ? screen.width - 25 : 50;
+		const opacityValue = show ? 1 : 0;
 
 		this.state = {
-			openMenu : new Animated.Value(50),
-			opacity : new Animated.Value(0)
+			openMenu : new Animated.Value(openMenuValue),
+			opacity : new Animated.Value(opacityValue)
 		}
 	}
 
@@ -46,8 +49,6 @@ class BubbleMenu extends Component{
 				}
 			)
 		]).start();
-
-
 	}
 
 	render(){
